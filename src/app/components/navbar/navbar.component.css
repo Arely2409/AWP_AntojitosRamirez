@@ -1,23 +1,18 @@
-/* styles.css */
-
-/* Cambiar el color de fondo del navbar */
 .navbar-custom {
   background-color: #F07D37;
 }
 
-/* Estilo para el logo */
 .navbar-custom .navbar-brand img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  height: 50px;
+  height: 50px;
+  margin-right: 100px;
 }
 
-/* Estilos para las opciones de menú y submenu */
-.navbar-custom .navbar-nav .nav-item .nav-link {
+.navbar-custom .navbar-nav .nav-link {
   color: white;
 }
 
-.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+.navbar-custom .navbar-nav .nav-link:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
