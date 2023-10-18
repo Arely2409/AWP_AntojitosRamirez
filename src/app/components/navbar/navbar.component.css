@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Cambiar el color de fondo del navbar */
+.navbar-custom {
+  background-color: #F07D37;
+}
+
+/* Estilo para el logo */
+.navbar-custom .navbar-brand img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Estilos para las opciones de menú y submenu */
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-custom .navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: #F07D37;
+}
+
+.navbar-custom .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: white;
+}
+
+.navbar-custom .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
