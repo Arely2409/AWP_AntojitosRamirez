@@ -1,0 +1,34 @@
+#idMesa{
+    padding-left: 4%;
+    font-size: 23px;
+
+}
+#row1{
+    height: 450px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+#card1{
+    background-color: #F07D37;
+    width: 70% ;
+}
+
+#card2{
+    width: 26%;
+}
+
+
+#mariachi{
+    height: 120px;
+    width: 90px;    
+    position: absolute;
+    bottom: 0;
+    
+}
+
+#rowTotal{
+    position: absolute;
+    bottom: 0;
+}
