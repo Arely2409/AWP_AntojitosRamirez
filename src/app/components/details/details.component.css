@@ -1,0 +1,24 @@
+/* Estilo para el contenedor */
+.container {
+    background-color: #F07D37;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Sancreek', cursive;
+  }
+  
+  /* Estilo para los elementos de texto */
+  p, th, td {
+    font-family: 'Sancreek';
+    font-size: 18px;
+  }
+  
+  /* Estilo para los encabezados de la tabla */
+  th {
+    font-size: 18px;
+  }
+  
+  /* Estilo para el texto "Total" */
+  .total p {
+    font-size: 24px;
+  }
+  
