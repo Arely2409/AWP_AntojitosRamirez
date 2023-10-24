@@ -1,6 +1,6 @@
 #idMesa{
     padding-left: 4%;
-    font-size: 23px;
+    font-size: 27px;
 
 }
 #row1{
@@ -12,11 +12,11 @@
 
 #card1{
     background-color: #F07D37;
-    width: 70% ;
+    width: 60% ;
 }
 
 #card2{
-    width: 26%;
+    width: 36%;
 }
 
 
@@ -25,10 +25,10 @@
     width: 90px;    
     position: absolute;
     bottom: 0;
-    
 }
 
 #rowTotal{
     position: absolute;
     bottom: 0;
+    padding-left: 15%;
 }

@@ -1,12 +1,38 @@
 
   <br>
   <!-- CARD 1 - ORDENES -->
-  <h1 id="idMesa">MESA</h1>
+  <h1 id="idMesa"><strong>MESA</strong></h1>
   <div class="row" id="row1">
     <div class="card" id="card1">
         <div class="card-body">
-            <h1 class="card-title">Ordenes</h1>
-            <p class="card-text"> texto de prueba</p>
+            <h1 class="card-title"><strong>Ordenes</strong></h1>
+            <!-- Mesero -->
+            <p style="font-size: 18px;"> Mesero </p>
+            <select style="width: 100px;">
+              <option value="opcion" >Opción 1</option>
+          </select>
+          <br><br>
+          <!-- Platillo -->
+          <div class="row" style="width: 70%;">
+            <div class="col">
+              <p style="font-size: 18px;"> Platillo </p>
+              <select style="width: 100px;">
+              <option value="opcion" >Opción 1</option>
+              </select>
+            </div>
+            <div class="col">
+              <p style="font-size: 18px;"> Cantidad </p>
+                <button id="disminuir">-</button>
+                <input type="text" id="valor" value="0" style="width: 15px;">
+                <button id="aumentar">+</button>
+            </div>
+            <div class="col">
+              <p style="font-size: 18px;"> Observaciones </p>
+              <input type="text">
+            </div>
+        </div>
+
+
         </div>
     </div>
 
@@ -15,26 +41,33 @@
     <div class="card" id="card2">
         <div class="card-body" >
             <h1 id="textTicket"><strong>Ticket</strong></h1>
-            <div class="row">
-              <div class="col">Platillo
-                <br><br>
-                  <p id="idPlatillo">Molotes</p>
-              </div>
-              <div class="col" id="idCantidadP">Cantidad
-                <br><br>
-                <p style="text-align: center;">2</p>
-              </div>
-              <div class="col" id="idObservación">Observación
-                <br><br>
-                <p>Sin cebolla</p>
+            <table style="width: 100%; text-align: center;">
+              <thead>
+                <tr>
+                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Orden</th>
+                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Cantidad</th>
+                  <th style="font-size: 16px; border-bottom: 1px solid #3a3939; ">Observaciones</th>
+                </tr>
+              </thead>
+              <br>
+              <tbody>
+                <tr>
+                  <td>Molotes</td>
+                  <td>3</td>
+                  <td>Sin cebolla</td>
+                </tr>
 
-              </div>
-              <img src="assets/mariachi.png" id="mariachi" class="card-img-top" alt="mariachi">            
-              <div class="row" id="rowTotal">
-                <h2 class="col" style="text-align:end;">Total:</h2>
-                <h2 class="col" id="idTotal">$150</h2>
-              </div>
+                
+              </tbody>
+            </table>
+            <img src="assets/mariachi.png" id="mariachi" class="card-img-top" alt="mariachi">
+
+
+            <div class="row" id="rowTotal">
+              <h2 class="col" style="text-align:end;">Total:</h2>
+              <h2 class="col" id="idTotal">$150</h2>
             </div>
+
         </div>
     </div>
 </div>
