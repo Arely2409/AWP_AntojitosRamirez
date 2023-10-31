@@ -31,7 +31,7 @@ body{
     margin-top: 400px;
     margin-left: -680%;
  }*/
- 
+
 
  #row1{
     margin: 0%;
@@ -43,9 +43,13 @@ body{
 
 #card1{
     background-color: #F07D37;
-    width: 95%;
+    width: 85%;
     height: -10%;
     margin-left: 2.5%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .Bnvd{

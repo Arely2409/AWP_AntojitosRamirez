@@ -20,7 +20,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .col-md-3 h2 {
@@ -44,7 +44,7 @@
 }
 
 .col-md-4 p {
-  font-size: 24px; 
+  font-size: 24px;
   font-family: 'DM Sans', sans-serif;
   align-items: center;
   text-align: center;
@@ -56,21 +56,21 @@
   width: 650px;
 }
 .input-group {
-  display: flex; 
+  display: flex;
 }
 
 .input-short {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 .icon-button {
-  background: transparent; 
-  border: none; 
-  cursor: pointer; 
-  padding: 0; 
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .icon-button:focus {
-  outline: none; 
+  outline: none;
 }
 
 
@@ -88,9 +88,9 @@
   background-color: #F07D37;
   font-family: "Sancreek", sans-serif;
   font-size: 18px;
-  color: #ffffff; 
-  padding: 10px 20px; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
