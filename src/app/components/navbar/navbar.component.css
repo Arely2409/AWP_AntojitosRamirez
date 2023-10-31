@@ -9,7 +9,8 @@
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  color: white;
+  color: #5F2420;
+  font-size: 20px;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
@@ -30,5 +31,5 @@
 }
 .custom-font {
   font-family: 'Sancreek', cursive;
-  font-size: 20px;
+  color: #5F2420;
 }
