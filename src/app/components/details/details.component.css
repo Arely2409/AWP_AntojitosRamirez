@@ -21,4 +21,7 @@
   .total p {
     font-size: 24px;
   }
+  .custom-font {
+    font-family: 'Sancreek', cursive;
+  }
   
