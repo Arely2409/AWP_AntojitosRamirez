@@ -1,9 +1,13 @@
 /* Estilo para el contenedor */
 .container {
-    background-color: #F07D37;
-    margin-top: 20px;
-    padding: 20px;
-    font-family: 'Sancreek', cursive;
+  background-color: #F07D37; 
+  margin-top: 20px;
+   padding: 20px; 
+   position: relative; 
+   height: 700px;
+    display: flex;
+     flex-direction: column; 
+     justify-content: space-between;
   }
   
   /* Estilo para los elementos de texto */
@@ -24,4 +28,17 @@
   .custom-font {
     font-family: 'Sancreek', cursive;
   }
-  
+  .tbody{
+    color: white;
+  }
+  .tr{
+    font-size: 20px; 
+    
+  }
+  .mesa{
+    font-size: 24px; 
+    text-align: center;
+  }
+  .boton{
+    position: absolute; bottom: 10px; left: 10px;
+  }

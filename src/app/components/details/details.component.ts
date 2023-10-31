@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent {
+  irAtras() {
+  
+  }
 
 }

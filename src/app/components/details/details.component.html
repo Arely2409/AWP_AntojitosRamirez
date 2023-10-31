@@ -1,33 +1,83 @@
-
-<div class="container" style="background-color: #F07D37; margin-top: 10px; padding: 20px; ">
-  <p style="font-size: 30px;">Detalles</p>
-  <p style="font-size: 24px; text-align: center;">Mesa 1</p>
+<div class="container ">
+  <div>
+    <p style="font-size: 30px;">Detalles</p>
+    <p class="mesa" >Mesa 1</p>
    
-    
-    <table style="width: 100%;">
+    <table style="width: 100%; border-spacing: 20px;">
       <thead>
-        <tr>
-          <th style="font-size: 18px; ">Orden</th>
-          <th style="font-size: 18px; ">Cantidad</th>
-          <th style="font-size: 18px; ">Bebidas</th>
-          <th style="font-size: 18px; ">Cantidad</th>
-          
+        <tr class="tr">
+          <th >Orden</th>
+          <th >Cantidad</th>
+          <th >Bebidas</th>
+          <th >Cantidad</th>
         </tr>
       </thead>
-      <tbody>
-        <tr style="color: white;">
+      <tbody class="tbody">
+        <tr >
           <td>Enchiladas</td>
-          <td>2</td>
+          <td >2</td>
           <td>Coca-Cola</td>
           <td>3</td>
+        </tr>
+        <tr >
+          <td>Molotes</td>
+          <td>1</td>
+          <td>Sprite</td>
+          <td>1</td>
+        </tr>
+        <tr >
+          <td>Patita de puerco</td>
+          <td>1</td>
+          <td>Sangria</td>
+          <td>2</td>
         </tr>
         <!-- Puedes agregar más filas aquí -->
       </tbody>
     </table>
-    <br>
-  
-    <div style="text-align: center;">
-      <p style="font-size: 24px;">Total: $50.00</p>
-    </div>
+    <p class="mesa" >Mesa </p>
+   
+    <table style="width: 100%; border-spacing: 20px;">
+      <thead>
+        <tr class="tr">
+          <th >Orden</th>
+          <th >Cantidad</th>
+          <th >Bebidas</th>
+          <th >Cantidad</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr >
+          <td>Enchiladas</td>
+          <td >2</td>
+          <td>Coca-Cola</td>
+          <td>3</td>
+        </tr>
+        <tr >
+          <td>Molotes</td>
+          <td>1</td>
+          <td>Sprite</td>
+          <td>1</td>
+        </tr>
+        <tr >
+          <td>Patita de puerco</td>
+          <td>1</td>
+          <td>Sangria</td>
+          <td>2</td>
+        </tr>
+        <!-- Puedes agregar más filas aquí -->
+      </tbody>
+    </table>
+
+
+
+
   </div>
-  
+
+  <div style="text-align: center;">
+    <p style="font-size: 24px;">Total: $50.00</p>
+  </div>
+
+  <button mat-icon-button (click)="irAtras()" class="boton">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+</div>
