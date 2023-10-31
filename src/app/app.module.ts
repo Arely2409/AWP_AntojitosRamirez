@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { OrderComponent } from './components/order/order.component';
 import { TablesComponent } from './components/tables/tables.component';
+import { BackgroundComponent } from './background/background.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TablesComponent } from './components/tables/tables.component';
     TablesComponent,
     CashBreakComponent,
     DetailsComponent,
-    NavbarComponent, 
+    NavbarComponent,
+    BackgroundComponent, 
   ],
   imports: [
     BrowserModule,

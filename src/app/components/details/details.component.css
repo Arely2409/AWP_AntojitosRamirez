@@ -1,8 +1,8 @@
 /* Estilo para el contenedor */
 .container {
   background-color: #F07D37; 
-  margin-top: 20px;
-   padding: 20px; 
+ 
+  
    position: relative; 
    height: 700px;
     display: flex;
@@ -42,3 +42,13 @@
   .boton{
     position: absolute; bottom: 10px; left: 10px;
   }
+  :host {
+    background-color: #F5EAD6; /* El color de fondo que desees */
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    height: auto;
+    background-color: #F9E8CC;
+}
