@@ -4,7 +4,7 @@
 
 }
 #row1{
-    height: 450px;
+    height: 80%;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 2%;
@@ -13,10 +13,13 @@
 #card1{
     background-color: #F07D37;
     width: 60% ;
+    height: 80%;
 }
 
 #card2{
     width: 36%;
+    height: 80%;
+
 }
 
 
