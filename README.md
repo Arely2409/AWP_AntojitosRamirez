@@ -2,5 +2,5 @@
 # AntojitosDams
 # AntojitosMads
 # AntojitosAdms
-# AntojitosSmds
+# AntojitosSamd
 
