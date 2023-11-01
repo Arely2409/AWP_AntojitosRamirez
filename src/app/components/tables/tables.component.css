@@ -2,9 +2,11 @@
     padding-left: 4%;
     font-size: 27px;
 
+
+/* MESA ORDEN */
 }
 #row1{
-    height: 450px;
+    height: 80%;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 2%;
@@ -13,10 +15,51 @@
 #card1{
     background-color: #F07D37;
     width: 60% ;
+    height: 80%;
 }
 
+
+ #meseroOpcion{
+    width: 150px; 
+    height: 30px;
+    border: none; 
+    outline: none;
+}
+
+#platilloOpcion{
+    width: 150px;
+    height: 30px; 
+    border: none; 
+    outline: none;
+} 
+
+#btnAddPlatillo{
+    background-color: #F4A618;
+    font-family: "Sancreek", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnDeletePlatillo{
+    background-color: #A22022;
+    font-family: "Sancreek", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* TICKET */
 #card2{
     width: 36%;
+    height: 80%;
+
 }
 
 
@@ -37,7 +80,8 @@
     font-size: 20px;
   }
   :host {
-    background-color: #F5EAD6; /* El color de fondo que desees */
+    /*El color de fondo que desees*/ 
+    background-color: #F5EAD6; 
     display: block;
     width: 100%;
     height: 100%;

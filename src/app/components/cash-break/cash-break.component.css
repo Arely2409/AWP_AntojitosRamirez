@@ -5,9 +5,10 @@
   height: 100%;
 }
 
-.container {
+.containerone {
   background-color: #F07D37;
   margin-top: 40px;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -50,10 +51,12 @@
   text-align: center;
   font-weight: bold;
   margin-top: 40px;
+  margin-left: 20%;
 }
 
 .col-md-8 input {
-  width: 650px;
+  width: 400px;
+  margin-left: 25%;
 }
 .input-group {
   display: flex;
@@ -80,8 +83,8 @@
 }
 
 .input-short,.input-medium,.input-long,.input-extra-long {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .cashbreack-button{
