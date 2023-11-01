@@ -1,36 +1,66 @@
 
   <br>
-  <!-- CARD 1 - ORDENES -->
   <h1 id="idMesa" class="custom-font"><strong>MESA</strong></h1>
-  <div class="row" id="row1">
+  <div class="row" id="row1"    style=" position: relative; " >
+    <!-- CARD 1 - ORDENES -->
     <div class="card" id="card1">
         <div class="card-body">
             <h1 class="card-title custom-font"><strong>Ordenes</strong></h1>
             <!-- Mesero -->
             <p style="font-size: 18px;"> Mesero </p>
-            <select style="width: 100px;">
+            <select id="meseroOpcion">
               <option value="opcion" >Opción 1</option>
+              <option value="opcion" >Opción 2</option>
+              <option value="opcion" >Opción 3</option>
           </select>
           <br><br>
           <!-- Platillo -->
           <div class="row" style="width: 70%;">
             <div class="col">
               <p style="font-size: 18px;"> Platillo </p>
-              <select style="width: 100px;">
-              <option value="opcion" >Opción 1</option>
+              <select id="platilloOpcion">
+              <option value="opcion" >Platillo 1</option>
+              <option value="opcion" >Platillo 2</option>
+              <option value="opcion" >Platillo 3</option>
+
               </select>
             </div>
             <div class="col">
               <p style="font-size: 18px;"> Cantidad </p>
                 <button id="disminuir">-</button>
-                <input type="text" id="valor" value="0" style="width: 15px;">
+                <input type="text" id="cantidadPlatillo" value="0" style="width: 15px;">
                 <button id="aumentar">+</button>
             </div>
             <div class="col">
               <p style="font-size: 18px;"> Observaciones </p>
               <input type="text">
             </div>
-        </div>
+          </div>
+          <br>
+          <!-- Botones agregar y eliminar -->
+
+          <button class="button" id="btnAddPlatillo">Agregar</button>
+          <button class="button" id="btnDeletePlatillo">Eliminar</button>
+          <br><br>
+          <!-- Bebidas -->
+          <div class="row" style="width: 46%;">
+            <div class="col">
+              <p style="font-size: 18px;"> Bebida </p>
+              <select id="platilloOpcion">
+              <option value="opcion" >Platillo 1</option>
+              <option value="opcion" >Platillo 2</option>
+              <option value="opcion" >Platillo 3</option>
+
+              </select>
+            </div>
+            <div class="col">
+              <p style="font-size: 18px;"> Cantidad </p>
+                <button id="disminuir">-</button>
+                <input type="text" id="cantidadPlatillo" value="0" style="width: 15px;">
+                <button id="aumentar">+</button>
+            </div>
+            </div>
+
 
 
         </div>
