@@ -15,7 +15,7 @@
           </select>
           <br><br>
           <!-- Platillo -->
-          <div class="row" style="width: 70%;">
+          <div class="row" id="platillo" style="width: 70%;">
             <div class="col">
               <p style="font-size: 18px;"> Platillo </p>
               <select id="platilloOpcion">
@@ -27,13 +27,20 @@
             </div>
             <div class="col">
               <p style="font-size: 18px;"> Cantidad </p>
-                <button id="disminuir">-</button>
-                <input type="text" id="cantidadPlatillo" value="0" style="width: 15px;">
-                <button id="aumentar">+</button>
+              <button (click)="decremento()" 
+                [disabled]="numero <=1" 
+                class="btn"id="disminuirPlatillo">-
+              </button>
+                <input type="text" id="cantidadPlatillo" value="{{numero}}">
+              <button (click)="incremento()" 
+                [disabled]="numero >= 20" 
+                class="btn" id="aumentarPlatillo">+
+              </button>
+
             </div>
             <div class="col">
-              <p style="font-size: 18px;"> Observaciones </p>
-              <input type="text">
+              <p style="font-size: 18px;" > Observaciones </p>
+              <input type="text" id="idObservaciones">
             </div>
           </div>
           <br>
@@ -43,23 +50,34 @@
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
           <br><br>
           <!-- Bebidas -->
-          <div class="row" style="width: 46%;">
+          <div class="row" id="bebida" style="width: 46%;">
             <div class="col">
               <p style="font-size: 18px;"> Bebida </p>
               <select id="platilloOpcion">
-              <option value="opcion" >Platillo 1</option>
-              <option value="opcion" >Platillo 2</option>
-              <option value="opcion" >Platillo 3</option>
+              <option value="opcion" >Bebida 1</option>
+              <option value="opcion" >Bebida 2</option>
+              <option value="opcion" >Bebida 3</option>
 
               </select>
             </div>
             <div class="col">
               <p style="font-size: 18px;"> Cantidad </p>
-                <button id="disminuir">-</button>
-                <input type="text" id="cantidadPlatillo" value="0" style="width: 15px;">
-                <button id="aumentar">+</button>
+            <button (click)="decremento()" 
+                [disabled]="numero <=1" 
+                class="btn"id="disminuirBebida">-
+            </button>
+            <input type="text" id="cantidadBebida" value="{{numero}}">
+            <button (click)="incremento()" 
+                [disabled]="numero >= 10" 
+                class="btn" id="aumentarBebida">+
+            </button>
+
             </div>
             </div>
+            <br>
+            <button class="button" id="btnAddPlatillo">Agregar</button>
+            <button class="button" id="btnDeletePlatillo">Eliminar</button>
+            <br><br>
 
 
 

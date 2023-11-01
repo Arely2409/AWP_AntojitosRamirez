@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class TablesComponent {
 
+
+  numero: number = 1;
+
+  incremento() {
+    this.numero++;
+  }
+  decremento() {
+    this.numero--;
+  }
+
 }
