@@ -6,7 +6,7 @@
 /* MESA ORDEN */
 }
 #row1{
-    height: 80%;
+    height:auto;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 2%;
@@ -98,7 +98,7 @@
 
 #idObservaciones{
     border-radius: 5px;
-    width: 200px;
+    width: 150px;
     height: 30px; 
     border: none; 
     outline: none;
@@ -132,7 +132,7 @@
 /* TICKET */
 #card2{
     width: 36%;
-    height: 80%;
+    height:auto;
 
 }
 
