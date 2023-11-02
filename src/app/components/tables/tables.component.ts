@@ -8,13 +8,21 @@ import { Component } from '@angular/core';
 export class TablesComponent {
 
 
-  numero: number = 1;
+  numeroPlatillo: number = 1;
+  numeroBebida: number = 1;
 
-  incremento() {
-    this.numero++;
+  incrementoPlatillo() {
+    this.numeroPlatillo++;
   }
-  decremento() {
-    this.numero--;
+  decrementoPlatillo() {
+    this.numeroPlatillo--;
+  }
+
+  incrementoBebida() {
+    this.numeroBebida++;
+  }
+  decrementoBebida() {
+    this.numeroBebida--;
   }
 
 }

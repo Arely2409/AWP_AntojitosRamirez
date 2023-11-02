@@ -27,13 +27,13 @@
             </div>
             <div class="col">
               <p style="font-size: 18px;"> Cantidad </p>
-              <button (click)="decremento()" 
-                [disabled]="numero <=1" 
+              <button (click)="decrementoPlatillo()" 
+                [disabled]="numeroPlatillo <=1" 
                 class="btn"id="disminuirPlatillo">-
               </button>
-                <input type="text" id="cantidadPlatillo" value="{{numero}}">
-              <button (click)="incremento()" 
-                [disabled]="numero >= 20" 
+                <input type="text" id="cantidadPlatillo" value="{{numeroPlatillo}}">
+              <button (click)="incrementoPlatillo()" 
+                [disabled]="numeroPlatillo >= 20" 
                 class="btn" id="aumentarPlatillo">+
               </button>
 
@@ -44,11 +44,12 @@
             </div>
           </div>
           <br>
-          <!-- Botones agregar y eliminar -->
-
+          <!-- Botones agregar y eliminar Platillo -->
           <button class="button" id="btnAddPlatillo">Agregar</button>
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
           <br><br>
+
+
           <!-- Bebidas -->
           <div class="row" id="bebida" style="width: 46%;">
             <div class="col">
@@ -62,13 +63,13 @@
             </div>
             <div class="col">
               <p style="font-size: 18px;"> Cantidad </p>
-            <button (click)="decremento()" 
-                [disabled]="numero <=1" 
+            <button (click)="decrementoBebida()" 
+                [disabled]="numeroBebida <=1" 
                 class="btn"id="disminuirBebida">-
             </button>
-            <input type="text" id="cantidadBebida" value="{{numero}}">
-            <button (click)="incremento()" 
-                [disabled]="numero >= 10" 
+            <input type="text" id="cantidadBebida" value="{{numeroBebida}}">
+            <button (click)="incrementoBebida()" 
+                [disabled]="numeroBebida >= 10" 
                 class="btn" id="aumentarBebida">+
             </button>
 
@@ -94,7 +95,7 @@
                 <tr>
                   <th style="font-size: 16px; border-bottom: 1px solid #000; ">Orden</th>
                   <th style="font-size: 16px; border-bottom: 1px solid #000; ">Cantidad</th>
-                  <th style="font-size: 16px; border-bottom: 1px solid #3a3939; ">Observaciones</th>
+                  <th style="font-size: 16px; border-bottom: 1px solid #3a3939; ">Precio</th>
                 </tr>
               </thead>
               <br>
@@ -102,7 +103,7 @@
                 <tr>
                   <td>Molotes</td>
                   <td>3</td>
-                  <td>Sin cebolla</td>
+                  <td>30</td>
                 </tr>
 
                 
@@ -118,4 +119,4 @@
 
         </div>
     </div>
-</div>
+  </div>
