@@ -34,6 +34,13 @@
     border: none; 
     outline: none;
 } 
+#bebidaOpcion{
+    border-radius: 5px;
+    width: 150px;
+    height: 30px; 
+    border: none; 
+    outline: none;
+} 
 
 
 #cantidadPlatillo{
@@ -115,8 +122,32 @@
     height: 30px;
     width: 100px; 
 }
+#btnAddBebida{
+    background-color: #F4A618;
+    font-family: "Sancreek", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 100px; 
+}
 
 #btnDeletePlatillo{
+    background-color: #A22022;
+    font-family: "Sancreek", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px; 
+    width: 100px;
+    margin-left: 10px;
+}
+
+#btnDeleteBebida{
     background-color: #A22022;
     font-family: "Sancreek", sans-serif;
     font-size: 15px;

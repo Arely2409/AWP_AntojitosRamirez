@@ -19,9 +19,9 @@
             <div class="col">
               <p style="font-size: 18px;"> Platillo </p>
               <select id="platilloOpcion">
-              <option value="opcion" >Platillo 1</option>
-              <option value="opcion" >Platillo 2</option>
-              <option value="opcion" >Platillo 3</option>
+              <option>Platillo 1</option>
+              <option>Platillo 2</option>
+              <option>Platillo 3</option>
 
               </select>
             </div>
@@ -54,7 +54,7 @@
           <div class="row" id="bebida" style="width: 46%;">
             <div class="col">
               <p style="font-size: 18px;"> Bebida </p>
-              <select id="platilloOpcion">
+              <select id="bebidaOpcion">
               <option value="opcion" >Bebida 1</option>
               <option value="opcion" >Bebida 2</option>
               <option value="opcion" >Bebida 3</option>
@@ -69,15 +69,15 @@
             </button>
             <input type="text" id="cantidadBebida" value="{{numeroBebida}}">
             <button (click)="incrementoBebida()" 
-                [disabled]="numeroBebida >= 10" 
+                [disabled]="numeroBebida >= 20" 
                 class="btn" id="aumentarBebida">+
             </button>
 
             </div>
             </div>
             <br>
-            <button class="button" id="btnAddPlatillo">Agregar</button>
-            <button class="button" id="btnDeletePlatillo">Eliminar</button>
+            <button class="button" id="btnAddBebida">Agregar</button>
+            <button class="button" id="btnDeleteBebida">Eliminar</button>
             <br><br>
 
 
@@ -95,17 +95,12 @@
                 <tr>
                   <th style="font-size: 16px; border-bottom: 1px solid #000; ">Orden</th>
                   <th style="font-size: 16px; border-bottom: 1px solid #000; ">Cantidad</th>
-                  <th style="font-size: 16px; border-bottom: 1px solid #3a3939; ">Precio</th>
+                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Observaciones</th>
+                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Precio</th>
                 </tr>
               </thead>
               <br>
               <tbody>
-                <tr>
-                  <td>Molotes</td>
-                  <td>3</td>
-                  <td>30</td>
-                </tr>
-
                 
               </tbody>
             </table>
