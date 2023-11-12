@@ -173,6 +173,8 @@
     width: 90px;    
     position: absolute;
     bottom: 0;
+    right: 12%;
+    opacity: 80%;
 }
 
 #rowTotal{
