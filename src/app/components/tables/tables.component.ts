@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <td>${platilloSeleccionado}</td>
         <td>${cantidadSeleccionada}</td>
         <td>${observaciones}</td>
+        <td>precio</td>
+
       `;
 
       if (tablaTicket) {
