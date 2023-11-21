@@ -14,65 +14,82 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnDeleteBebida = document.getElementById('btnDeleteBebida');
   const btnAddBebida = document.getElementById('btnAddBebida');
 
-  let filaCount = 1;
+  let filaCountPlatillo = 1;
+  let filaCountBebida = 1;
 
+  /* Agregar Platillo */
   if (btnAddPlatillo) {
-      btnAddPlatillo.addEventListener('click', () => {
-          const platilloSeleccionado = platilloOpcion.value;
-          const cantidadSeleccionada = cantidadPlatillo.value;
-          const observaciones = idObservaciones.value;
+    btnAddPlatillo.addEventListener('click', () => {
+      const platilloSeleccionado = platilloOpcion.value;
+      const cantidadSeleccionada = cantidadPlatillo.value;
+      const observaciones = idObservaciones.value;
 
-          const nuevaFila = document.createElement('tr');
-          nuevaFila.id = `filaPlatillo${filaCount}`;
+      const nuevaFila = document.createElement('tr');
+      nuevaFila.id = `filaPlatillo${filaCountPlatillo}`;
 
-          nuevaFila.innerHTML = `
-              <td>${platilloSeleccionado}</td>
-              <td>${cantidadSeleccionada}</td>
-              <td>${observaciones}</td>
-              
-          `;
-          if (tablaTicket) {
-              tablaTicket.appendChild(nuevaFila);
-          }
-          filaCount++;
-      });
+      nuevaFila.innerHTML = `
+        <td>${platilloSeleccionado}</td>
+        <td>${cantidadSeleccionada}</td>
+        <td>${observaciones}</td>
+      `;
+
+      if (tablaTicket) {
+        tablaTicket.appendChild(nuevaFila);
+      }
+
+      filaCountPlatillo++;
+    });
   }
+
+  /* Agregar Bebida */
   if (btnAddBebida) {
     btnAddBebida.addEventListener('click', () => {
-        const bebidaSeleccionada = bebidaOpcion.value;
-        const cantidadSeleccionadaB = cantidadBebida.value;
-        const observaciones = idObservaciones.value;
+      const bebidaSeleccionada = bebidaOpcion.value;
+      const cantidadSeleccionadaB = cantidadBebida.value;
+      const observaciones = idObservaciones.value;
 
-        const nuevaFila = document.createElement('tr');
-        nuevaFila.id = `filaPlatillo${filaCount}`;
+      const nuevaFilaB = document.createElement('tr');
+      nuevaFilaB.id = `filaBebida${filaCountBebida}`;
 
-        nuevaFila.innerHTML = `
-            <td>${bebidaSeleccionada}</td>
-            <td>${cantidadSeleccionadaB}</td>
-            <td>${observaciones}</td>
-            <td>precio</td>
-            
-        `;
-        if (tablaTicket) {
-            tablaTicket.appendChild(nuevaFila);
-        }
-        filaCount++;
+      nuevaFilaB.innerHTML = `
+        <td>${bebidaSeleccionada}</td>
+        <td>${cantidadSeleccionadaB}</td>
+        <td></td>
+        <td>precio</td>
+      `;
+
+      if (tablaTicket) {
+        tablaTicket.appendChild(nuevaFilaB);
+      }
+
+      filaCountBebida++;
     });
-}
+  }
 
   if (btnDeletePlatillo) {
-      btnDeletePlatillo.addEventListener('click', () => {
-          if (tablaTicket && tablaTicket.lastElementChild) {
-              const ultimaFila = tablaTicket.lastElementChild as HTMLTableRowElement;
-              tablaTicket.removeChild(ultimaFila);
-              filaCount--;
-          }
-      });
+    btnDeletePlatillo.addEventListener('click', () => {
+      if (tablaTicket && tablaTicket.lastElementChild) {
+        const ultimaFilaPlatillo = tablaTicket.lastElementChild as HTMLTableRowElement;
+        if (ultimaFilaPlatillo.id.startsWith('filaPlatillo')) {
+          tablaTicket.removeChild(ultimaFilaPlatillo);
+          filaCountPlatillo--;
+        }
+      }
+    });
+  }
+
+  if (btnDeleteBebida) {
+    btnDeleteBebida.addEventListener('click', () => {
+      if (tablaTicket && tablaTicket.lastElementChild) {
+        const ultimaFilaBebida = tablaTicket.lastElementChild as HTMLTableRowElement;
+        if (ultimaFilaBebida.id.startsWith('filaBebida')) {
+          tablaTicket.removeChild(ultimaFilaBebida);
+          filaCountBebida--;
+        }
+      }
+    });
   }
 });
-
-
-
 
 
 @Component({
