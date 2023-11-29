@@ -6,18 +6,24 @@
     <div class="card" id="card1">
         <div class="card-body">
             <h1 class="card-title custom-font"><strong>Ordenes</strong></h1>
-          
+
+          <form #ordenesform="ngForm" >   <!-- Formulario -->
           <!-- Platillo -->
           <div class="row" id="platillo" style="width: 70%;">
             <div class="col">
               <p style="font-size: 18px;"> Platillo </p>
               <select id="platilloOpcion">
-              <option>Molotes</option>
-              <option>Enchiladas</option>
-              <option>Tostadas</option>
-              <option>Gorditas</option>
-              <option>Chalupas</option>
-              <option>Tacos dorados</option>
+              <option id="Enchiladas">Enchiladas</option>
+              <option id="Molotes">Molotes</option>
+              <option id="Tostadas">Tostadas</option>
+              <option id="Gorditas">Gorditas</option>
+              <option id="Chalupas">Chalupas</option>
+              <option id="Tacos Dorados">Tacos dorados</option>
+              <option id="Patita de Puerco">Patita de Puerco</option>
+              <option id="Pata de pollo">Pata de pollo</option>
+              <option id="Huevo Duro">Huevo Duro</option>
+              <option id="Quesadilla">Quesadilla</option>
+              
               
               </select>
             </div>
@@ -51,11 +57,11 @@
             <div class="col">
               <p style="font-size: 18px;"> Bebida </p>
               <select id="bebidaOpcion">
-              <option>Boing</option>
-              <option>Coca Cola</option>
-              <option>Jarritos</option>
-              <option>Sangría</option>
-              <option>Sprite</option>
+              <option id="Boing 350 ml">Boing</option>
+              <option id="Coca Cola">Coca Cola</option>
+              <option id="Jarrito">Jarritos</option>
+              <option id="Sangria">Sangría</option>
+              <option id="Sprite">Sprite</option>
 
               </select>
             </div>
@@ -77,12 +83,14 @@
             <button class="button" id="btnAddBebida">Agregar</button>
             <button class="button" id="btnDeleteBebida">Eliminar</button>
             <br><br>
+          </form>
 
 
-            <button class="button" id="btnPedido">Realizar Pedido</button>
+            <button class="button"  type="submit" id="btnPedido">Realizar Pedido</button>
 
         </div>
     </div>
+    
 
 
     <!-- CARD 2 - TICKET -->

@@ -13,6 +13,10 @@ import { NgModule } from '@angular/core';
 import { OrderComponent } from './components/order/order.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { BackgroundComponent } from './background/background.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from'@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { BackgroundComponent } from './background/background.component';
     BrowserAnimationsModule, 
     MatButtonModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    HttpClientModule,
+    
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
