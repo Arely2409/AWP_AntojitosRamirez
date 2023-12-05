@@ -11,10 +11,10 @@
           <!-- Platillo -->
           <div class="row" id="platillo" style="width: 70%;">
 
-            <!--[(ngModel)]="PlatilloService.selectedPlatillo.nombre"-->
+            <!--[(ngModel)]="PlatilloService.selectedPlatillo.nombre id="nombre" for="nombre" -->
               <div class="col-lg-3">
-                <label for="nombre" style="font-size: 18px;">Platillo</label>
-                <select id="platilloOpcion" name="id_platillo" type="text" id="nombre" name="nombre" class="form-control"
+                <label for="platilloOpcion"  style="font-size: 18px;">Platillo</label>
+                <select id="platilloOpcion" name="id_platillo" type="text" name="nombre" class="form-control"
                 [(ngModel)]="PlatilloService.selectedPlatillo.nombre">
                   <option value="Enchiladas">Enchiladas</option>
                   <option value="Molotes">Molotes</option>
