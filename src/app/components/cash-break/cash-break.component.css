@@ -4,9 +4,50 @@
   width: 100%;
   height: 100%;
 }
-.text-center {
-  margin: 0 auto; /* Establece márgenes automáticos para centrar horizontalmente */
+/* Estilos para la tabla */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
 }
+/* Estilos para el contenedor de la tabla */
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para la tabla */
+.styled-table {
+  width: 80%; /* Ancho de la tabla */
+  border-collapse: collapse;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Resto de estilos para la tabla (encabezados, celdas, filas alternas) como antes */
+/* ... */
+
+/* Estilos para las celdas de encabezado */
+.styled-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Estilos para las celdas de datos */
+.styled-table td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Estilos alternados para filas */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 .containerone {
   background-color: #F07D37;
   margin-top: 40px;
