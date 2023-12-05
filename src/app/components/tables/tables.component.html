@@ -7,27 +7,30 @@
         <div class="card-body">
             <h1 class="card-title custom-font"><strong>Ordenes</strong></h1>
 
-          <form #ordenesform="ngForm" >   <!-- Formulario -->
+            <form #Mesas="ngForm">   <!-- Formulario -->
           <!-- Platillo -->
           <div class="row" id="platillo" style="width: 70%;">
-            <div class="col">
-              <p style="font-size: 18px;"> Platillo </p>
-              <select id="platilloOpcion">
-              <option id="Enchiladas">Enchiladas</option>
-              <option id="Molotes">Molotes</option>
-              <option id="Tostadas">Tostadas</option>
-              <option id="Gorditas">Gorditas</option>
-              <option id="Chalupas">Chalupas</option>
-              <option id="Tacos Dorados">Tacos dorados</option>
-              <option id="Patita de Puerco">Patita de Puerco</option>
-              <option id="Pata de pollo">Pata de pollo</option>
-              <option id="Huevo Duro">Huevo Duro</option>
-              <option id="Quesadilla">Quesadilla</option>
-              
-              
-              </select>
+
+            <!--[(ngModel)]="PlatilloService.selectedPlatillo.nombre"-->
+              <div class="col-lg-3">
+                <label for="platilloOpcion" style="font-size: 18px;">Platillo</label>
+                <select id="platilloOpcion" name="id_platillo" class="form-control">
+                  <option value="Enchiladas">Enchiladas</option>
+                  <option value="Molotes">Molotes</option>
+                  <option value="Tostadas">Tostadas</option>
+                  <option value="Gorditas">Gorditas</option>
+                  <option value="Chalupas">Chalupas</option>
+                  <option value="Tacos dorados">Tacos dorados</option>
+                  <option value="Patita de Puerco">Patita de Puerco</option>
+                  <option value="Pata de pollo">Pata de pollo</option>
+                  <option value="Huevo Duro">Huevo Duro</option>
+                  <option value="Quesadilla">Quesadilla</option>
+                </select>
+                
             </div>
-            <div class="col">
+  
+
+            <div class="col-lg-3">
               <p style="font-size: 18px;"> Cantidad </p>
               <button (click)="decrementoPlatillo()" 
                 [disabled]="numeroPlatillo <=1" 
@@ -40,24 +43,40 @@
               </button>
 
             </div>
-            <div class="col">
+            <div class="col-lg-3">
               <p style="font-size: 18px;" > Observaciones </p>
-              <input type="text" id="idObservaciones">
+              <input type="text" class="Observaciones" id="idObservaciones">
             </div>
+          
+            <div class="col-lg-3">
+              <label for="precioPlatillo" style="font-size: 18px;">Precio</label>
+              <select id="precioPlatillo" name="precioPlatillo" class="form-control">
+                <option value="22">22</option>
+                <option value="18">18</option>
+                <option value="12">12</option>
+                <option value="8">8</option>
+              </select>
+              
           </div>
-          <br>
+      </div>
+        <br>
+
+        <div class="row"> 
+          <div class="col-lg-3">
           <!-- Botones agregar y eliminar Platillo -->
           <button class="button" id="btnAddPlatillo">Agregar</button>
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
-          <br><br>
+          </div> 
+        </div> 
+          <br>
 
 
           <!-- Bebidas -->
-          <div class="row" id="bebida" style="width: 46%;">
-            <div class="col">
+          <div class="row"  style="width: 46%;">
+            <div id="bebida"class="col-lg-4">
               <p style="font-size: 18px;"> Bebida </p>
               <select id="bebidaOpcion">
-              <option id="Boing 350 ml">Boing</option>
+              <option id="Boing 350 ml">Boing 350 ml</option>
               <option id="Coca Cola">Coca Cola</option>
               <option id="Jarrito">Jarritos</option>
               <option id="Sangria">Sangría</option>
@@ -65,7 +84,8 @@
 
               </select>
             </div>
-            <div class="col">
+
+            <div class="col-lg-4">
               <p style="font-size: 18px;"> Cantidad </p>
             <button (click)="decrementoBebida()" 
                 [disabled]="numeroBebida <=1" 
@@ -78,10 +98,23 @@
             </button>
 
             </div>
+
+            <div class="col-lg-3">
+              <label for="precioBebida" style="font-size: 18px;">Precio</label>
+              <select id="precioBebida" name="precioBebida" class="form-control">
+                <option value="20">20</option>
+                <option value="15">15</option>
+              </select>
+              
+          </div>
             </div>
+
             <br>
+            <div class="row">
+              <div class="col-lg-3">
             <button class="button" id="btnAddBebida">Agregar</button>
             <button class="button" id="btnDeleteBebida">Eliminar</button>
+          </div></div>
             <br><br>
           </form>
 
