@@ -15,7 +15,7 @@
               <div class="col-lg-3">
                 <label for="platilloOpcion"  style="font-size: 18px;">Platillo</label>
                 <select id="platilloOpcion" name="id_platillo" type="text" name="nombre" class="form-control"
-                [(ngModel)]="PlatilloService.selectedPlatillo.nombre">
+                [(ngModel)]="detalleTicketService.selectedDetalle.id_platillo">
                   <option value="Enchiladas">Enchiladas</option>
                   <option value="Molotes">Molotes</option>
                   <option value="Tostadas">Tostadas</option>
@@ -65,7 +65,7 @@
         <div class="row"> 
           <div class="col-lg-3">
           <!-- Botones agregar y eliminar Platillo -->
-          <button class="button" id="btnAddPlatillo" (click)="createPlatillo(Platillos)">Agregar</button>
+          <button class="button" id="btnAddPlatillo" (click)="addDetalleTicket(Platillos)">Agregar</button>
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
           </div> 
         </div> 

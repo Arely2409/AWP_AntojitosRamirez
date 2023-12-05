@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Platillo } from 'src/app/models/platillo';
+import { DetalleTicketService } from 'src/app/services/detalle-ticket.service';
 import { PlatilloService } from 'src/app/services/platillo.service';
 
 @Component({
@@ -129,14 +130,14 @@ export class TablesComponent {
 
  
 
-  constructor(public PlatilloService: PlatilloService) {}
-  createPlatillo(form:NgForm){
-    this.PlatilloService.createPlatillo(form.value).subscribe(
+  constructor(public detalleTicketService: DetalleTicketService) {}
+  addDetalleTicket(form:NgForm){
+    this.detalleTicketService.addDetalleTicket(form.value).subscribe(
       res=>{
         form.reset();
-        this.PlatilloService.getAllPlatillos().subscribe(
+        this.detalleTicketService.getDetallesTicket().subscribe(
           res=>{
-            this.PlatilloService.platillos=res;
+            this.detalleTicketService.detallesTicket=res;
             console.log(res);
           },
           err=> console.error(err)

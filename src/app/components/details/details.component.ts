@@ -28,4 +28,6 @@ export class DetailsComponent {
       err => console.error(err)
     );
   }
+
+  
 }
