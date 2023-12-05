@@ -6,7 +6,7 @@ import { detalleTicket } from '../models/detalleTicket';
   providedIn: 'root'
 })
 export class DetalleTicketService {
-  URL_API = 'http://localhost:3000/';
+  URL_API = 'http://localhost:3000/detalleTickets';
   detallesTicket: detalleTicket[] = [];
   selectedDetalle: detalleTicket = {
     id_detalle: 0,
@@ -20,16 +20,16 @@ export class DetalleTicketService {
 
   constructor(private http: HttpClient) { }
 
-  getAllDetallesTicket() {
-    return this.http.get<detalleTicket[]>(this.URL_API + 'getDetallesTicket');
+  getDetallesTicket() {
+    return this.http.get<detalleTicket[]>(this.URL_API + '/');
   }
 
-  addDetalleTicket(detalle: detalleTicket) {
-    return this.http.post(this.URL_API + 'createDetalleTicket', detalle);
+  addDetalleTicket(id_detalle: detalleTicket) {
+    return this.http.post(this.URL_API + 'createDetalleTicket', id_detalle);
   }
 
-  deleteDetalleTicket(id: number) {
-    return this.http.delete(this.URL_API + 'deleteDetalleTicket/' + id);
+  deleteDetalleTicket(id_detalle: number) {
+    return this.http.delete(this.URL_API + 'deleteDetalleTicket/' + id_detalle);
   }
 
   updateDetalleTicket(detalle: detalleTicket) {

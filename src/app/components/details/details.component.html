@@ -4,72 +4,28 @@
 <div class="container ">
   <div>
     <p style="font-size: 30px;">Detalles</p>
-    <p class="mesa" >Mesa 1</p>
-   
-    <table style="width: 100%; border-spacing: 20px;">
+    <div class="table-container">
+    <table class="styled-table">
       <thead>
-        <tr class="tr">
-          <th >Orden</th>
-          <th >Cantidad</th>
-          <th >Bebidas</th>
-          <th >Cantidad</th>
-        </tr>
+      <!-- <th>ID Mesa</th>-->
+        <th>ID Detalle</th>
+        <th>ID Ticket</th>
+        <th>Cantidad</th>
+        <th>Observaciones</th>
       </thead>
-      <tbody class="tbody">
-        <tr >
-          <td>Enchiladas</td>
-          <td >2</td>
-          <td>Coca-Cola</td>
-          <td>3</td>
+      <tbody>
+        <tr *ngFor="let detallesTicket of detalleTicketService.detallesTicket">
+          <td>{{ detallesTicket.id_detalle }}</td>
+          <td>{{ detallesTicket.id_ticket }}</td>
+          <td>{{ detallesTicket.cantidad }}</td>
+          <td>{{ detallesTicket.observaciones }}</td>
+           <!--  <td>{{ mesas.id_mesa }}</td>-->
+        <!--  <td>{{ mesas.id_mesero }}</td>-->
         </tr>
-        <tr >
-          <td>Molotes</td>
-          <td>1</td>
-          <td>Sprite</td>
-          <td>1</td>
-        </tr>
-        <tr >
-          <td>Patita de puerco</td>
-          <td>1</td>
-          <td>Sangria</td>
-          <td>2</td>
-        </tr>
-        <!-- Puedes agregar más filas aquí -->
       </tbody>
     </table>
-    <p class="mesa" >Mesa </p>
-   
-    <table style="width: 100%; border-spacing: 20px;">
-      <thead>
-        <tr class="tr">
-          <th >Orden</th>
-          <th >Cantidad</th>
-          <th >Bebidas</th>
-          <th >Cantidad</th>
-        </tr>
-      </thead>
-      <tbody class="tbody">
-        <tr >
-          <td>Enchiladas</td>
-          <td >2</td>
-          <td>Coca-Cola</td>
-          <td>3</td>
-        </tr>
-        <tr >
-          <td>Molotes</td>
-          <td>1</td>
-          <td>Sprite</td>
-          <td>1</td>
-        </tr>
-        <tr >
-          <td>Patita de puerco</td>
-          <td>1</td>
-          <td>Sangria</td>
-          <td>2</td>
-        </tr>
-        <!-- Puedes agregar más filas aquí -->
-      </tbody>
-    </table>
+  </div>
+    
 
 
 

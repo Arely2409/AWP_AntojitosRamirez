@@ -1,14 +1,35 @@
 /* Estilo para el contenedor */
 .container {
-  background-color: #F07D37; 
- 
-  
-   position: relative; 
-   height: 700px;
-    display: flex;
-     flex-direction: column; 
-     justify-content: space-between;
+  background-color: #f07d37;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Para manejar contenido que excede el contenedor */
+  height: auto; /* Permitir que la altura se ajuste al contenido */
+}
+  .styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
   }
+  
+  .styled-table th,
+  .styled-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .styled-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
   
   /* Estilo para los elementos de texto */
   p, th, td {
