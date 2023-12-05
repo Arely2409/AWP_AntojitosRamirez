@@ -7,14 +7,15 @@
         <div class="card-body">
             <h1 class="card-title custom-font"><strong>Ordenes</strong></h1>
 
-            <form #Mesas="ngForm">   <!-- Formulario -->
+            <form #Platillos="ngForm">   <!-- Formulario -->
           <!-- Platillo -->
           <div class="row" id="platillo" style="width: 70%;">
 
             <!--[(ngModel)]="PlatilloService.selectedPlatillo.nombre"-->
               <div class="col-lg-3">
-                <label for="platilloOpcion" style="font-size: 18px;">Platillo</label>
-                <select id="platilloOpcion" name="id_platillo" class="form-control">
+                <label for="nombre" style="font-size: 18px;">Platillo</label>
+                <select id="platilloOpcion" name="id_platillo" type="text" id="nombre" name="nombre" class="form-control"
+                [(ngModel)]="PlatilloService.selectedPlatillo.nombre">
                   <option value="Enchiladas">Enchiladas</option>
                   <option value="Molotes">Molotes</option>
                   <option value="Tostadas">Tostadas</option>
@@ -64,7 +65,7 @@
         <div class="row"> 
           <div class="col-lg-3">
           <!-- Botones agregar y eliminar Platillo -->
-          <button class="button" id="btnAddPlatillo">Agregar</button>
+          <button class="button" id="btnAddPlatillo" (click)="createPlatillo(Platillos)">Agregar</button>
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
           </div> 
         </div> 
@@ -119,7 +120,7 @@
           </form>
 
 
-            <button class="button"  type="submit" id="btnPedido">Realizar Pedido</button>
+         
 
         </div>
     </div>
@@ -148,8 +149,7 @@
 
 
             <div class="row" id="rowTotal">
-              <h2 class="col" style="text-align:end;">Total:</h2>
-              <h2 class="col" id="idTotal">$150</h2>
+              
             </div>
 
         </div>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Platillo } from 'src/app/models/platillo';
+import { PlatilloService } from 'src/app/services/platillo.service';
 
 @Component({
   selector: 'app-tables',
@@ -123,4 +126,30 @@ export class TablesComponent {
       });
     }
   }
+
+ 
+
+  constructor(public PlatilloService: PlatilloService) {}
+  createPlatillo(form:NgForm){
+    this.PlatilloService.createPlatillo(form.value).subscribe(
+      res=>{
+        form.reset();
+        this.PlatilloService.getAllPlatillos().subscribe(
+          res=>{
+            this.PlatilloService.platillos=res;
+            console.log(res);
+          },
+          err=> console.error(err)
+        )
+      },err=>console.error(err)
+      )
+  }
+
+ 
+  
+
+
+
+
+
 }

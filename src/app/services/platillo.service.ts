@@ -21,8 +21,8 @@ export class PlatilloService {
     return this.http.get<Platillo[]>(this.URL_API + 'getPlatillos');
   }
 
-  addPlatillo(platillo: Platillo) {
-    return this.http.post(this.URL_API + 'createPlatillo', platillo);
+  createPlatillo(platillo: Platillo) {
+    return this.http.post(this.URL_API + 'createPlatillo/', platillo);
   }
 
   deletePlatillo(id: number) {
