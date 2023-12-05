@@ -4,7 +4,9 @@
   width: 100%;
   height: 100%;
 }
-
+.text-center {
+  margin: 0 auto; /* Establece márgenes automáticos para centrar horizontalmente */
+}
 .containerone {
   background-color: #F07D37;
   margin-top: 40px;

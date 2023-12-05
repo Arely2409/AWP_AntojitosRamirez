@@ -7,7 +7,7 @@ import { Mesa } from '../models/mesas';
   providedIn: 'root'
 })
 export class MesaService {
-  URL_API = 'http://localhost:3000/';
+  URL_API = 'http://localhost:3000/mesas';
   mesas: Mesa[] = [];
   selectedMesa: Mesa = {
     id_mesa: 0,
@@ -19,11 +19,11 @@ export class MesaService {
 
   constructor(private http: HttpClient) { }
 
-  getAllMesas() {
-    return this.http.get<Mesa[]>(this.URL_API + 'getMesas');
+  getMesas() {
+    return this.http.get<Mesa[]>(this.URL_API + '/');
   }
 
-  addMesa(id_mesa: Mesa) {
+  createMesa(id_mesa: Mesa) {
     return this.http.post(this.URL_API + 'createMesa', id_mesa);
   }
 

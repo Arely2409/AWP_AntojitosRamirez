@@ -2,39 +2,31 @@
 <div class="containerone"><br>
     <div class="card-body">
         <div class="row">
-            <div class="col-md-4">
-                <h2>No. Mesa</h2>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-             
-            </div>
-            <div class="col-md-8">
-            <h2>Total</h2>
-            <br>
-            <div class="input-group">
-                <input type="text" class="input-short" placeholder="$">
-                <button type="button" class="icon-button" routerLink="/details">
-                    <span class="material-icons">manage_search</span>
-                </button>
-            </div>
-            <br>
-            <div class="input-group">
-                <input type="text" class="input-short" placeholder="$">
-                <button type="button" class="icon-button" routerLink="/details">
-                    <span class="material-icons">manage_search</span>
-                </button>
-            </div>
-            <br>
-            <div class="input-group">
-                <input type="text" class="input-short" placeholder="$">
-                <button type="button" class="icon-button" routerLink="/details">
-                    <span class="material-icons">manage_search</span>
-                </button>
-            </div>
-            <br>
            
-            </div>
+            <div class="container"> <!-- Agrega un contenedor para alinear el div -->
+                <div class="row">
+                  <div class="col-md-8 text-center" style="font-size: 20px; "> <!-- Añade la clase 'text-center' para centrar el contenido dentro del div -->
+                    <br>
+                    <table>
+                      <thead>
+                        <th>ID Mesa</th>
+                        <th>Número de Mesa</th>
+                        <th>ID Mesero</th>
+                        <th>Total de Ventas</th>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let mesas of mesaService.mesas">
+                          <td>{{ mesas.id_mesa }}</td>
+                          <td>{{ mesas.numero_mesa }}</td>
+                          <td>{{ mesas.id_mesero }}</td>
+                          <td>{{ mesas.total_ventas }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </div>
+                </div>
+              </div>
         </div>
     </div><br><br>
 </div>
