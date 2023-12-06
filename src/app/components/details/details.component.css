@@ -13,35 +13,35 @@
     width: 100%;
     margin: auto;
   }
-  
+
   .styled-table th,
   .styled-table td {
     border: 1px solid #dddddd;
     padding: 8px;
     text-align: left;
   }
-  
+
   .styled-table th {
     background-color: #f2f2f2;
   }
-  
+
   .table-container {
     text-align: center;
     margin-top: 20px;
   }
-  
-  
+
+
   /* Estilo para los elementos de texto */
   p, th, td {
     font-family: 'Sancreek';
     font-size: 18px;
   }
-  
+
   /* Estilo para los encabezados de la tabla */
   th {
     font-size: 18px;
   }
-  
+
   /* Estilo para el texto "Total" */
   .total p {
     font-size: 24px;
@@ -53,11 +53,11 @@
     color: white;
   }
   .tr{
-    font-size: 20px; 
-    
+    font-size: 20px;
+
   }
   .mesa{
-    font-size: 24px; 
+    font-size: 24px;
     text-align: center;
   }
   .boton{
