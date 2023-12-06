@@ -6,7 +6,7 @@ import { Bebidas } from '../models/bebidas';
   providedIn: 'root'
 })
 export class BebidasService {
-  URL_API = 'https://prueba-6-jov9.onrender.com/bebidas';
+  URL_API = 'http://localhost:3000//bebidas';
   bebidas: Bebidas[] = [];
   selectedBebida: Bebidas = {
     id_bebida: 0,

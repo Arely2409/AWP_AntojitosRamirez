@@ -6,7 +6,7 @@ import { Platillo } from '../models/platillo';
   providedIn: 'root'
 })
 export class PlatilloService {
-  URL_API = 'https://prueba-6-jov9.onrender.com/platillos';
+  URL_API = 'http://localhost:3000/platillos';
   platillos: Platillo[] = [];
   selectedPlatillo: Platillo = {
     id_platillo: 0,

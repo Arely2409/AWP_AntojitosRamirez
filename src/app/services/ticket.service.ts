@@ -19,7 +19,7 @@ export class TicketService {
   constructor(private http: HttpClient) { }
 
   getAllTickets() {
-    return this.http.get<Ticket[]>(this.URL_API + 'getTickets');
+    return this.http.get<Ticket[]>(this.URL_API + '/');
   }
 
   addTicket(ticket: Ticket) {

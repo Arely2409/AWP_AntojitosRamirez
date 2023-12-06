@@ -6,7 +6,7 @@ import { detalleTicket } from '../models/detalleTicket';
   providedIn: 'root'
 })
 export class DetalleTicketService {
-  URL_API = 'https://prueba-6-jov9.onrender.com/detalleTickets';
+  URL_API = 'http://localhost:3000/detalleTickets';
   detallesTicket: detalleTicket[] = [];
   selectedDetalle: detalleTicket = {
     id_detalle: 0,
@@ -29,10 +29,10 @@ export class DetalleTicketService {
   }
 
   deleteDetalleTicket(id_detalle: number) {
-    return this.http.delete(this.URL_API + '/deleteDetalleTicket/' + id_detalle);
+    return this.http.delete(this.URL_API + 'deleteDetalleTicket/' + id_detalle);
   }
 
   updateDetalleTicket(detalle: detalleTicket) {
-    return this.http.put(this.URL_API + '/updateDetalleTicket/' + detalle.id_detalle, detalle);
+    return this.http.put(this.URL_API + 'updateDetalleTicket/' + detalle.id_detalle, detalle);
   }
 }

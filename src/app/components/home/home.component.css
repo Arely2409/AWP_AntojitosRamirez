@@ -26,38 +26,16 @@ p, th, td {
   font-family: 'Sancreek';
   font-size: 18px;
 }
-.img1{
-  width: 150px;
-  height: 100px;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  margin-left: -6%;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-.img2{
-width: 150px;
-height: 100px;
-margin-left: 2%;
-margin-top: 10%;
-margin-bottom: 5%;
+/* Ajustes para la sección de imágenes debajo de la tabla */
+.row {
+  margin-top: 20px;
 }
-.img3{
-width: 150px;
-height: 100px;
-margin-top: 10%;
-margin-bottom: 5%;
-margin-left: 2%;
-}
-.img4{
-width: 150px;
-height: 100px;
-margin-top: 10%;
-margin-bottom: 5%;
-margin-left: 2%;
-}
-.img5{
-width: 150px;
-height: 100px;
-margin-top: 10%;
-margin-bottom: 5%;
+
+.col-md-4 {
+  padding: 5px;
 }
