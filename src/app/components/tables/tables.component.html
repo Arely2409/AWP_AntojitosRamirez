@@ -1,5 +1,8 @@
+<body>
+
 
   <br>
+
   <h1 id="idMesa" class="custom-font"><strong>MESA</strong></h1>
   <div class="row" id="row1"    style=" position: relative; " >
     <!-- CARD 1 - ORDENES -->
@@ -27,19 +30,19 @@
                   <option value="Huevo Duro">Huevo Duro</option>
                   <option value="Quesadilla">Quesadilla</option>
                 </select>
-                
+
             </div>
-  
+
 
             <div class="col-lg-3">
               <p style="font-size: 18px;"> Cantidad </p>
-              <button (click)="decrementoPlatillo()" 
-                [disabled]="numeroPlatillo <=1" 
+              <button (click)="decrementoPlatillo()"
+                [disabled]="numeroPlatillo <=1"
                 class="btn"id="disminuirPlatillo">-
               </button>
                 <input type="text" id="cantidadPlatillo" value="{{numeroPlatillo}}">
-              <button (click)="incrementoPlatillo()" 
-                [disabled]="numeroPlatillo >= 20" 
+              <button (click)="incrementoPlatillo()"
+                [disabled]="numeroPlatillo >= 20"
                 class="btn" id="aumentarPlatillo">+
               </button>
 
@@ -48,7 +51,7 @@
               <p style="font-size: 18px;" > Observaciones </p>
               <input type="text" class="Observaciones" id="idObservaciones">
             </div>
-          
+
             <div class="col-lg-3">
               <label for="precioPlatillo" style="font-size: 18px;">Precio</label>
               <select id="precioPlatillo" name="precioPlatillo" class="form-control">
@@ -57,18 +60,18 @@
                 <option value="12">12</option>
                 <option value="8">8</option>
               </select>
-              
+
           </div>
       </div>
         <br>
 
-        <div class="row"> 
+        <div class="row">
           <div class="col-lg-3">
           <!-- Botones agregar y eliminar Platillo -->
           <button class="button" id="btnAddPlatillo" (click)="addDetalleTicket(Platillos)">Agregar</button>
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
-          </div> 
-        </div> 
+          </div>
+        </div>
           <br>
 
 
@@ -88,13 +91,13 @@
 
             <div class="col-lg-4">
               <p style="font-size: 18px;"> Cantidad </p>
-            <button (click)="decrementoBebida()" 
-                [disabled]="numeroBebida <=1" 
+            <button (click)="decrementoBebida()"
+                [disabled]="numeroBebida <=1"
                 class="btn"id="disminuirBebida">-
             </button>
             <input type="text" id="cantidadBebida" value="{{numeroBebida}}">
-            <button (click)="incrementoBebida()" 
-                [disabled]="numeroBebida >= 20" 
+            <button (click)="incrementoBebida()"
+                [disabled]="numeroBebida >= 20"
                 class="btn" id="aumentarBebida">+
             </button>
 
@@ -106,7 +109,7 @@
                 <option value="20">20</option>
                 <option value="15">15</option>
               </select>
-              
+
           </div>
             </div>
 
@@ -120,38 +123,36 @@
           </form>
 
 
-         
+
 
         </div>
     </div>
-    
+
 
 
     <!-- CARD 2 - TICKET -->
-    <div class="card" id="card2">
-        <div class="card-body" >
-            <h1 id="textTicket" class="custom-font"><strong>Ticket</strong></h1>
-            <table style="width: 100%; text-align: center;">
+    <div class="card2" id="card2">
+      <div class="card-body2">
+          <h1 id="textTicket" class="custom-font"><strong>Ticket</strong></h1>
+          <table class="custom-table2">
               <thead>
-                <tr>
-                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Orden</th>
-                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Cantidad</th>
-                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Observaciones</th>
-                  <th style="font-size: 16px; border-bottom: 1px solid #000; ">Precio</th>
-                </tr>
+                  <tr>
+                      <th>Orden</th>
+                      <th>Cantidad</th>
+                      <th>Observaciones</th>
+                      <th>Precio</th>
+                  </tr>
               </thead>
-              <br>
               <tbody>
-                
+                  <!-- Contenido de la tabla -->
               </tbody>
-            </table>
-            <img src="assets/mariachi.png" id="mariachi" class="card-img-top" alt="mariachi">
-
-
-            <div class="row" id="rowTotal">
-              
-            </div>
-
-        </div>
-    </div>
+          </table>
+          <img src="assets/mariachi.png" id="mariachi" class="card-img-top" alt="mariachi">
+          <div class="row" id="rowTotal">
+              <!-- Contenido del total -->
+          </div>
+      </div>
   </div>
+
+  </div>
+</body>
