@@ -6,7 +6,7 @@ import { Platillo } from '../models/platillo';
   providedIn: 'root'
 })
 export class PlatilloService {
-  URL_API = 'http://localhost:3000/';
+  URL_API = 'https://prueba-6-jov9.onrender.com/platillos';
   platillos: Platillo[] = [];
   selectedPlatillo: Platillo = {
     id_platillo: 0,
@@ -18,18 +18,18 @@ export class PlatilloService {
   constructor(private http: HttpClient) { }
 
   getAllPlatillos() {
-    return this.http.get<Platillo[]>(this.URL_API + 'getPlatillos');
+    return this.http.get<Platillo[]>(this.URL_API + '/');
   }
 
   createPlatillo(platillo: Platillo) {
-    return this.http.post(this.URL_API + 'createPlatillo/', platillo);
+    return this.http.post(this.URL_API + '/createPlatillo/', platillo);
   }
 
   deletePlatillo(id: number) {
-    return this.http.delete(this.URL_API + 'deletePlatillo/' + id);
+    return this.http.delete(this.URL_API + '/deletePlatillo/' + id);
   }
 
   updatePlatillo(platillo: Platillo) {
-    return this.http.put(this.URL_API + 'updatePlatillo/' + platillo.id_platillo, platillo);
+    return this.http.put(this.URL_API + '/updatePlatillo/' + platillo.id_platillo, platillo);
   }
 }

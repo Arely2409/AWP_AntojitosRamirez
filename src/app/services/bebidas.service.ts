@@ -6,7 +6,7 @@ import { Bebidas } from '../models/bebidas';
   providedIn: 'root'
 })
 export class BebidasService {
-  URL_API = 'http://localhost:3000/';
+  URL_API = 'https://prueba-6-jov9.onrender.com/bebidas';
   bebidas: Bebidas[] = [];
   selectedBebida: Bebidas = {
     id_bebida: 0,
@@ -18,18 +18,18 @@ export class BebidasService {
   constructor(private http: HttpClient) { }
 
   getAllBebidas() {
-    return this.http.get<Bebidas[]>(this.URL_API + 'getBebidas');
+    return this.http.get<Bebidas[]>(this.URL_API + '/');
   }
 
   addBebida(bebida: Bebidas) {
-    return this.http.post(this.URL_API + 'createBebida', bebida);
+    return this.http.post(this.URL_API + '/createBebida', bebida);
   }
 
   deleteBebida(id: number) {
-    return this.http.delete(this.URL_API + 'deleteBebida/' + id);
+    return this.http.delete(this.URL_API + '/deleteBebida/' + id);
   }
 
   updateBebida(bebida: Bebidas) {
-    return this.http.put(this.URL_API + 'updateBebida/' + bebida.id_bebida, bebida);
+    return this.http.put(this.URL_API + '/updateBebida/' + bebida.id_bebida, bebida);
   }
 }
