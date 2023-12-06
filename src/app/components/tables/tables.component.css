@@ -227,3 +227,39 @@ body{
   height: auto;
   background-color: #F9E8CC;
 }
+/* Estilos para hacer el contenido más receptivo */
+
+/* Estilo para la fila principal */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Estilo para las tarjetas */
+  .card {
+    flex: 0 0 100%; /* Ocupará el 100% del ancho en pantallas pequeñas */
+    margin-bottom: 20px;
+  }
+  
+  /* Media query para pantallas medianas y grandes */
+  @media (min-width: 768px) {
+    .card {
+      flex: 0 0 48%; /* Ocupará el 48% del ancho en pantallas medianas y grandes */
+      margin-right: 2%; /* Espacio entre las tarjetas */
+    }
+  }
+  
+  /* Estilo para el contenido de la tabla del ticket */
+  .custom-table2 {
+    width: 100%;
+  }
+  
+  /* Media query para ajustar la tabla del ticket en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .custom-table2 th,
+    .custom-table2 td {
+      font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+  }
+  

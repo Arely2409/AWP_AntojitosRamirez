@@ -14,21 +14,21 @@
           <!-- Platillo -->
           <div class="row" id="platillo" style="width: 70%;">
 
-            <!--[(ngModel)]="PlatilloService.selectedPlatillo.nombre id="nombre" for="nombre" -->
+            
               <div class="col-lg-3">
                 <label for="platilloOpcion"  style="font-size: 18px;">Platillo</label>
                 <select id="platilloOpcion" name="id_platillo" type="text" name="nombre" class="form-control"
                 [(ngModel)]="detalleTicketService.selectedDetalle.id_platillo">
-                  <option value="Enchiladas">Enchiladas</option>
-                  <option value="Molotes">Molotes</option>
-                  <option value="Tostadas">Tostadas</option>
-                  <option value="Gorditas">Gorditas</option>
-                  <option value="Chalupas">Chalupas</option>
-                  <option value="Tacos dorados">Tacos dorados</option>
-                  <option value="Patita de Puerco">Patita de Puerco</option>
-                  <option value="Pata de pollo">Pata de pollo</option>
-                  <option value="Huevo Duro">Huevo Duro</option>
-                  <option value="Quesadilla">Quesadilla</option>
+                  <option value="1">Enchiladas</option>
+                  <option value="2">Molotes</option>
+                  <option value="3">Tostadas</option>
+                  <option value="4">Gorditas</option>
+                  <option value="5">Chalupas</option>
+                  <option value="6">Tacos dorados</option>
+                  <option value="7">Patita de Puerco</option>
+                  <option value="8">Pata de pollo</option>
+                  <option value="9">Huevo Duro</option>
+                  <option value="10">Quesadilla</option>
                 </select>
 
             </div>
@@ -69,22 +69,25 @@
           <div class="col-lg-3">
           <!-- Botones agregar y eliminar Platillo -->
           <button class="button" id="btnAddPlatillo" (click)="addDetalleTicket(Platillos)">Agregar</button>
+        </div>
+          <div class="col-lg-3">
           <button class="button" id="btnDeletePlatillo">Eliminar</button>
           </div>
+          <div class="col-lg-6"></div>
         </div>
           <br>
 
 
           <!-- Bebidas -->
-          <div class="row"  style="width: 46%;">
+          <div class="row"  style="width: 70%;">
             <div id="bebida"class="col-lg-4">
               <p style="font-size: 18px;"> Bebida </p>
               <select id="bebidaOpcion">
-              <option id="Boing 350 ml">Boing 350 ml</option>
-              <option id="Coca Cola">Coca Cola</option>
-              <option id="Jarrito">Jarritos</option>
-              <option id="Sangria">Sangría</option>
-              <option id="Sprite">Sprite</option>
+              <option id="1">Boing 350 ml</option>
+              <option id="2">Coca Cola</option>
+              <option id="3">Jarritos</option>
+              <option id="4">Sangría</option>
+              <option id="5">Sprite</option>
 
               </select>
             </div>
@@ -116,9 +119,12 @@
             <br>
             <div class="row">
               <div class="col-lg-3">
-            <button class="button" id="btnAddBebida">Agregar</button>
+            <button class="button" id="btnAddBebida">Agregar</button></div>
+            <div class="col-lg-3">
             <button class="button" id="btnDeleteBebida">Eliminar</button>
-          </div></div>
+          </div>
+          <div class="col-lg-6"></div>
+          </div>
             <br><br>
           </form>
 
