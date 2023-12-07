@@ -159,20 +159,7 @@
     width: 100px;
     margin-left: 10px;
 }
-#btnPedido{
-    background-color: rgb(25, 87, 35);
-    font-family: "Sancreek", sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 40px;
-    width: fit-content;
-    position: absolute;
-    right: 12%;
-    bottom: 5%;
-}
+
 
 /* TICKET */
 /* Estilos generales */
@@ -205,18 +192,6 @@ body {
   font-size: 16px;
 }
 
-/* Estilos para la imagen */
-#mariachi {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* Estilos para la fila del total */
-#rowTotal {
-  /* Estilos adicionales si hay contenido específico para esta fila */
-}
 :host {
   background-color: #F5EAD6; /* El color de fondo que desees */
   display: block;
