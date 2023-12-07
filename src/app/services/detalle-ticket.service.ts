@@ -6,7 +6,7 @@ import { detalleTicket } from '../models/detalleTicket';
   providedIn: 'root'
 })
 export class DetalleTicketService {
-  URL_API = 'http://localhost:3000/detalleTickets';
+  URL_API = 'https://prueba-6-jov9.onrender.com/detalleTickets';
   detallesTicket: detalleTicket[] = [];
   selectedDetalle: detalleTicket = {
     id_detalle: 0,

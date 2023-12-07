@@ -7,7 +7,7 @@ import { Mesa } from '../models/mesas';
   providedIn: 'root'
 })
 export class MesaService {
-  URL_API = 'http://localhost:3000/mesas';
+  URL_API = 'https://prueba-6-jov9.onrender.com/mesas';
   mesas: Mesa[] = [];
   selectedMesa: Mesa = {
     id_mesa: 0,
